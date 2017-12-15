@@ -1,0 +1,11 @@
+<% const {headers, contrib} = htmlWebpackPlugin.options %>
+
+<h1> <%= headers %></h1>
+<ul>
+    <% _.forEach(contrib, c => { %>
+    <li>
+        <%- c %>
+    </li>
+    <% }) %>
+</ul>
+<div id="app"></div>
